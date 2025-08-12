@@ -1,4 +1,4 @@
-# Neuro Forge: A Generative AI Tool
+# Neuro Forge- A Generative AI Tool
 
 Neuro Forge is a **full-featured, local-first** generative AI tool:
 -  **Text generation & chat** using Hugging Face `transformers` (with optional OpenAI API fallback).
