@@ -1,1 +1,3 @@
-
+GenAI Studio sample file.
+This is a small text file you can load into the RAG tab to test retrieval.
+It doesn't say much, but it's great for smoke testing.
