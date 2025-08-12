@@ -1,11 +1,11 @@
-# GenAI Studio — An Impressive Generative AI Project
+# Neuro Forge: Genarative AI
 
-GenAI Studio is a **full-featured, local-first** generative AI playground:
-- 🧠 **Text generation & chat** using Hugging Face `transformers` (with optional OpenAI API fallback).
-- 🖼️ **Image generation** using `diffusers` (Stable Diffusion) with safety filtering.
-- 📚 **RAG (Retrieval-Augmented Generation)** over your own files using `sentence-transformers` + `faiss`.
-- 🧪 **Prompt Lab** to design, save, and test prompt templates (Jinja2-style variables).
-- 🎛️ Built as a **Streamlit** app with clean UI and modular Python package (`genlab`).
+Neuro Forge is a **full-featured, local-first** generative AI playground:
+-  **Text generation & chat** using Hugging Face `transformers` (with optional OpenAI API fallback).
+-  **Image generation** using `diffusers` (Stable Diffusion) with safety filtering.
+-  **RAG (Retrieval-Augmented Generation)** over your own files using `sentence-transformers` + `faiss`.
+-  **Prompt Lab** to design, save, and test prompt templates (Jinja2-style variables).
+-  Built as a **Streamlit** app with clean UI and modular Python package (`genlab`).
 
 > You can run everything locally on CPU (slow but works) or enable GPU acceleration. OpenAI is optional.
 
@@ -65,8 +65,8 @@ Then open the local URL printed by Streamlit.
 ## Project Structure
 
 ```
-genai-studio/
-├── genlab/
+neuro-forge-gen-ai/
+├── gen/
 │   ├── __init__.py
 │   ├── text_gen.py
 │   ├── image_gen.py
@@ -83,16 +83,4 @@ genai-studio/
 
 ---
 
-## Notes & Tips
 
-- **Models**: By default, we use lightweight defaults to lower the barrier to entry. You can change the model names in the UI.
-- **Performance**: CPU works but is slow. If you have a GPU, install the appropriate PyTorch build (CUDA) for the best experience.
-- **Privacy**: Keep the **OpenAI toggle off** if you want to ensure fully local processing.
-- **Safety**: The image pipeline includes a safety checker by default; disabling it may generate unsafe content.
-- **Licenses**: Respect the licenses and usage policies of any model you download.
-
----
-
-## License
-
-MIT
