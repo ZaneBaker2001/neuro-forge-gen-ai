@@ -4,10 +4,10 @@ import base64
 import streamlit as st
 from PIL import Image
 
-from genlab.text_gen import TextGenerator, ChatMessage
-from genlab.image_gen import ImageGenerator, ImageConfig
-from genlab.rag import RAG, RAGConfig
-from genlab.utils import GenerationConfig, device_str, set_seed
+from gen.text_gen import TextGenerator, ChatMessage
+from gen.image_gen import ImageGenerator, ImageConfig
+from gen.rag import RAG, RAGConfig
+from gen.utils import GenerationConfig, device_str, set_seed
 
 st.set_page_config(page_title="GenAI Studio", page_icon="🤖", layout="wide")
 
