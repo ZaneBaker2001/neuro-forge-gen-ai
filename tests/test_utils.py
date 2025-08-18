@@ -1,4 +1,4 @@
-from genlab.utils import set_seed, stable_hash
+from gen.utils import set_seed, stable_hash
 
 def test_seed_repeatability():
     a = set_seed(1234)
