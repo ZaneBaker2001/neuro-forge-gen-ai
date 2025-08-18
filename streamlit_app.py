@@ -28,11 +28,11 @@ else:
 
 st.sidebar.write(f"Device: **{device_str()}**")
 
-tabs = st.tabs(["💬 Chat", "🖼️ Image", "📚 RAG", "🧪 Prompt Lab", "ℹ️ About"])
+tabs = st.tabs(["Chat", "Image", "RAG", "Prompt Lab", "About"])
 
 # ---------------- Chat Tab ----------------
 with tabs[0]:
-    st.header("💬 Chat")
+    st.header("Chat")
     st.caption("Chat with a local HF model or OpenAI fallback.")
 
     if "chat_history" not in st.session_state:
@@ -63,7 +63,7 @@ with tabs[0]:
 
 # ---------------- Image Tab ----------------
 with tabs[1]:
-    st.header("🖼️ Image Generation")
+    st.header("Image Generation")
     st.caption("Stable Diffusion via diffusers")
 
     prompt = st.text_area("Prompt", value="A cozy reading nook with warm sunlight, ultra-detailed, cinematic lighting", height=100)
@@ -100,7 +100,7 @@ with tabs[1]:
 
 # ---------------- RAG Tab ----------------
 with tabs[2]:
-    st.header("📚 Retrieval-Augmented Generation")
+    st.header("Retrieval-Augmented Generation")
     st.caption("Upload files, build a FAISS index, and query with your LLM.")
 
     if "rag" not in st.session_state:
@@ -134,7 +134,7 @@ with tabs[2]:
 
 # ---------------- Prompt Lab Tab ----------------
 with tabs[3]:
-    st.header("🧪 Prompt Lab")
+    st.header("Prompt Lab")
     st.caption("Create and test prompt templates with variables.")
 
     from jinja2 import Template
@@ -164,7 +164,7 @@ with tabs[3]:
 
 # ---------------- About Tab ----------------
 with tabs[4]:
-    st.header("ℹ️ About")
+    st.header("About")
     st.write("GenAI Studio is an open, local-first playground for text, image, and RAG workflows.")
     st.write("Swap models as you like and keep your data private. MIT licensed.")
     st.markdown("---")
